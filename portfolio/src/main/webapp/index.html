@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title> <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar"> <img class="logo" src="/images/EG-2.png" />
+    <ul>
+      <li class="nav-link"> <a href="#">Projects</a> </li>
+      <li class="nav-link"> <a href="#">About</a> </li>
+      <li class="nav-link"> <a href="#">Contact</a> </li>
+    </ul>
+  </nav>
+  <!-- Header -->
+  <header>
+      <h1 class="greeting">Hello, I'm Eduardo.
+          <br>
+          A developer.
+      </h1>
+  </header>
+  
+  <div id="content">
+    <h1>Eduardo's Portfolio</h1> <img class="personal-img" src="/images/profile-pic.jpeg" />
+    <p>I am currently a second-year student at Oregon State University studying computer science. I'm enthusiastic about front-end development and in my free time I like to play soccer and go on runs </p>
+    <p>This is my portfolio.</p>
+    <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+    <p>Click here to get a random message:</p> <button onclick="addRandomGreeting()">Hello</button>
+    <div id="greeting-container"></div>
+  </div>
+</body>
+
 </html>
