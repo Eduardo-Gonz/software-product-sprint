@@ -57,28 +57,29 @@ header {
 /* Projects */
 .project-section {
     width: 65%;
-    margin: 6rem auto 4rem auto;
+    margin: 4rem auto 4rem auto;
 }
 .project-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    margin-top: 6rem;
 }
 .proj-col {
     display: flex;
     flex-direction: column;
     width: 45%;
 }
+.project-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
 .project-desc {
-    margin-top: 16px;    
+    margin-top: 8px;
     font-size: 1.2rem;
     line-height: 1.5;
-}
-.project-title {
-    font-size: 1.5rem;
-    font-weight: 400;
 }
 .project-img {
     width: 100%;
