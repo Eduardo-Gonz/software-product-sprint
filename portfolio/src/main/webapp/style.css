@@ -1,3 +1,9 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #F4F9F9;
+}
+
 #content {
   margin-left: auto;
   margin-right: auto;
@@ -6,4 +12,80 @@
 
 #greeting-container {
   margin-top: 20px;
+}
+.personal-img {
+    width: 20%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 0 auto;
+    width: 65%;
+}
+.logo {
+    width: 7%;
+}
+.navbar ul {
+    display: inline;
+}
+.nav-link {
+    display: inline;
+    padding: 0 18px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+}
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    width: 65%;
+    margin: 6rem auto 0 auto;
+}
+.greeting {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+/* Projects */
+.project-section {
+    width: 65%;
+    margin: 4rem auto 4rem auto;
+}
+.project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6rem;
+}
+.proj-col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.project-title a {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+.project-title a:hover {
+    text-decoration: underline;
+}
+.project-desc {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.project-img {
+    width: 100%;
 }
