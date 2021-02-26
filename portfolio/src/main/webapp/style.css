@@ -72,9 +72,14 @@ header {
     flex-direction: column;
     width: 45%;
 }
-.project-title {
+.project-title a {
     font-size: 1.7rem;
     font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+.project-title a:hover {
+    text-decoration: underline;
 }
 .project-desc {
     margin-top: 8px;
