@@ -43,3 +43,13 @@ body {
 .nav-link a:hover {
     text-decoration: underline;
 }
+
+/* Header */
+header {
+    width: 65%;
+    margin: 6rem auto 0 auto;
+}
+.greeting {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
