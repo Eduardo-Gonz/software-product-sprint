@@ -13,9 +13,6 @@ body {
 #greeting-container {
   margin-top: 20px;
 }
-.personal-img {
-    width: 20%;
-}
 
 /* Navbar */
 .navbar {
@@ -88,4 +85,35 @@ header {
 }
 .project-img {
     width: 100%;
+}
+
+/* About Page */
+.about {
+    width: 65%;
+    margin: 4rem auto 4rem auto;
+}
+.about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-text-col {
+    display: flex;
+    flex-direction: column;
+    width: 55%;   
+}
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    margin-top: 0;
+}
+.about-img-col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: right;
+}
+.personal-img {
+    width: 40%;
+    margin-left: auto;
 }
