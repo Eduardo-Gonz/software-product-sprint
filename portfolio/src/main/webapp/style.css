@@ -1,9 +1,130 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #F4F9F9;
 }
 
-#greeting-container {
+#content {
+    font-size: 1.2rem;
+    width: 650px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 0 auto;
+    width: 65%;
+}
+.logo {
+    width: 7%;
+}
+.navbar ul {
+    display: inline;
+}
+.nav-link {
+    display: inline;
+    padding: 0 18px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+}
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    width: 65%;
+    margin: 6rem auto 0 auto;
+}
+.greeting {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+/* Projects */
+.project-section {
+    width: 65%;
+    margin: 4rem auto 4rem auto;
+}
+.project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6rem;
+}
+.proj-col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.project-title a {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+.project-title a:hover {
+    text-decoration: underline;
+}
+.project-desc {
+    margin-top: 8px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.project-img {
+    width: 100%;
+}
+
+/* About Page */
+.about {
+    width: 65%;
+    margin: 4rem auto 4rem auto;
+}
+.about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-text-col {
+    display: flex;
+    flex-direction: column;
+    width: 55%;   
+}
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.5; 
+    margin-top: 0;
+}
+.about-img-col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: right;
+}
+.personal-img {
+    width: 40%;
+    margin-left: auto;
+}
+
+.quote-btn {
+    border-radius: 12px;
+    border: 2px solid #dddddd;
+    font-size: 1rem;
+    padding: 10px 24px;
+}
+.quote-btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#quote-container {
+  font-style: italic;
   margin-top: 20px;
 }
