@@ -1,20 +1,29 @@
+html {
+    height: 100%;
+}
 body {
+    position: relative;
+    min-height: 100%;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: #F4F9F9;
 }
 
-footer {
-    background-color: #ffffff;
-    padding: 5%;
+section, main {
+    margin: 4rem auto 0 auto;
+    width: 65%;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 .title {
     font-weight: 400;
     font-size: 2.5rem;
 }
-
 .site-btn {
     border-radius: 12px;
     border: 2px solid #dddddd;
@@ -24,10 +33,6 @@ footer {
 .site-btn:hover {
     background-color: #ffffff;
     cursor: pointer;
-}
-#content {
-    font-size: 1.2rem;
-    width: 650px;
 }
 
 /* Navbar */
@@ -64,22 +69,21 @@ header {
 }
 
 /* Projects */
-.project-section {
-    width: 65%;
-    margin: 4rem auto 4rem auto;
-}
 .project-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 .proj-col {
     display: flex;
     flex-direction: column;
     width: 45%;
+}
+.row-reverse {
+    flex-direction: row-reverse;
 }
 .project-title a {
     font-size: 1.7rem;
@@ -92,7 +96,6 @@ header {
 }
 .project-desc {
     margin-top: 8px;
-    font-size: 1.2rem;
     line-height: 1.5;
 }
 .project-img {
@@ -100,10 +103,6 @@ header {
 }
 
 /* About Page */
-.about {
-    width: 65%;
-    margin: 4rem auto 4rem auto;
-}
 .about-row {
     display: flex;
     flex-direction: row;
@@ -115,8 +114,6 @@ header {
     width: 55%;   
 }
 .about-text {
-    font-size: 1.2rem;
-    line-height: 1.5; 
     margin-top: 0;
 }
 .about-img-col {
@@ -136,12 +133,6 @@ header {
 }
 
 /* Contact Page */
-
-.contact-section {
-    width: 65%;
-    margin: 4rem auto 4rem auto;
-}
-
 .input-title {
     font-size: 1.2rem;
     font-weight: 400;
@@ -155,6 +146,11 @@ header {
 }
 
 /* footer  */
+footer {
+    margin-top: 6rem;
+    background-color: #ffffff;
+    padding: 5%;
+}
 .footer-content {
     width: 30%;
     margin: auto;
@@ -165,5 +161,49 @@ header {
     display: inline;
     margin-right: 12px;
     text-decoration: none;
-    color: black;
+    color: #000000;
+}
+
+
+/* Mobile Styling */
+/* Tablet */
+@media (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .project-title a{
+        font-size: 1.2rem;
+    }
+    .form-input {
+        width: 100%;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+
+    /* Navbar Mobile */
+    .navbar ul {
+        display: inline-block;
+    }
+
+    /* Projects Mobile */
+    .project-row {
+        flex-direction: column;
+    }
+    .proj-col {
+        width: 100%;        
+    }
+    .project-img {
+        width: 80%;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
 }
