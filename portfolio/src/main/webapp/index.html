@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title> 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar"> <img class="logo" src="/images/EG-2.png" />
+    <ul>
+      <li class="nav-link"> <a href="index.html">Projects</a> </li>
+      <li class="nav-link"> <a href="about.html">About</a> </li>
+      <li class="nav-link"> <a href="contact.html">Contact</a> </li>
+    </ul>
+  </nav>
+  
+  <!-- Header -->
+  <header>
+      <h1 class="title">Hello, I'm Eduardo.
+          <br>
+          A developer.
+      </h1>
+  </header>
+  
+<!-- Projects -->
+  <main class="project-section">
+      <!-- Project 1 -->
+      <div class="project-row">
+        <div class="proj-col">
+            <h2 class="project-title">
+                <a href="https://secure-anchorage-61665.herokuapp.com/">Quality 5tandings</a>
+            </h2>
+            <p class="project-desc">A website that dynamically showcases the standings for Europe’s top five soccer leagues.</p>
+        </div>
+        <div class="proj-col">
+            <img class="project-img" src="/images/Quality_5standings.png"/>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-row">
+        <div class="proj-col">
+            <img class="project-img" src="/images/Whats_The_Dish.png"/>
+        </div>
+        <div class="proj-col">
+            <h2 class="project-title">
+                <a href="http://whatsthedish.appspot.com/">What's the Dish</a>
+            </h2>
+            <p class="project-desc">A website created in collaboration with two of my peers that provides the user with a list of recipes they can cook based on the ingredients they have in their household.</p>
+        </div>
+      </div>    
+
+  </main>
+
+
+
+</body>
+
 </html>
