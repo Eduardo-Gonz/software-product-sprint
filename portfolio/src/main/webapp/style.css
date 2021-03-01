@@ -9,11 +9,6 @@ body {
     width: 650px;
 }
 
-#greeting-container {
-  font-style: italic;
-  margin-top: 20px;
-}
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -116,4 +111,20 @@ header {
 .personal-img {
     width: 40%;
     margin-left: auto;
+}
+
+.quote-btn {
+    border-radius: 12px;
+    border: 2px solid #dddddd;
+    font-size: 1rem;
+    padding: 10px 24px;
+}
+.quote-btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#quote-container {
+  font-style: italic;
+  margin-top: 20px;
 }
