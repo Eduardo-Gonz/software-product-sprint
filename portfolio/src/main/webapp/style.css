@@ -3,11 +3,22 @@ body {
     font-weight: 400;
     background-color: #F4F9F9;
 }
+
 .title {
     font-weight: 400;
     font-size: 2.5rem;
 }
 
+.site-btn {
+    border-radius: 12px;
+    border: 2px solid #dddddd;
+    font-size: 1rem;
+    padding: 10px 24px;
+}
+.site-btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
 #content {
     font-size: 1.2rem;
     width: 650px;
@@ -113,24 +124,26 @@ header {
     margin-left: auto;
 }
 
-.quote-btn {
-    border-radius: 12px;
-    border: 2px solid #dddddd;
-    font-size: 1rem;
-    padding: 10px 24px;
-}
-.quote-btn:hover {
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
 #quote-container {
   font-style: italic;
   margin-top: 20px;
 }
 
 /* Contact Page */
+
 .contact-section {
     width: 65%;
     margin: 4rem auto 4rem auto;
+}
+
+.input-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form-input {
+    margin: 16px 0;
+    padding: 16px;
+    width: 40%;
+    border: 2px solid #ffffff;
 }
