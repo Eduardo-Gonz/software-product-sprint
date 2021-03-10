@@ -12,7 +12,14 @@ public class MotivationServlet extends HttpServlet {
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    
+    String[] quotes = new String[] {"With no pain, there is no gain", "Success is where preparation and opportunity meet",
+                                    "It is what is is", "The secret of getting ahead is getting started"};
+
+    int randIndex = (int)(Math.random() * quotes.length);
+    String quote = quotes[randIndex];
+
     response.setContentType("text/html;");
-    response.getWriter().println("With no pain, there is no gain");
+    response.getWriter().println(quote);
   }
 }
