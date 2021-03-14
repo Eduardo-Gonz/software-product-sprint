@@ -31,9 +31,11 @@
 
   <section class="contact-section">
       <div class="contact-form">
-          <form>
+          <form action="/form-handler" method="POST">
               <label class="input-title" for="name">Name</label><br>
               <input class="form-input" type="text" name="name"><br>
+              <label class="input-title" for="email">Email</label><br>
+              <input class="form-input" type="email" name="email"><br>
               <label class="input-title" for="message">Message</label><br>
               <textarea class="form-input" rows="10" cols="50" name="message"></textarea><br>
               <input type="submit" class="site-btn" value="Send">
