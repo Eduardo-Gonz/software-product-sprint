@@ -1,7 +1,9 @@
 async function showMotivation() {
   const responseFromServer = await fetch('/motivation');
-  const textFromResponse = await responseFromServer.text();
+  const motivationObj = await responseFromServer.json();
+
+  const quote = motivationObj[Math.floor(Math.random() * motivationObj.length)];
 
   const dateContainer = document.getElementById('motivation-container');
-  dateContainer.innerText = textFromResponse;
+  dateContainer.innerText = quote;
 }
