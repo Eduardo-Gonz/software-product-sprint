@@ -18,6 +18,7 @@
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
     <googleCloudProjectId>egonzalez-sps-spring21</googleCloudProjectId>
   </properties>
+     
 
   <dependencies>
     <!-- Java Servlets API -->
@@ -33,12 +34,21 @@
       <artifactId>jetty-server</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>com.google.cloud</groupId>
+      <artifactId>google-cloud-translate</artifactId>
+      <version>1.70.0</version>
+    </dependency>
+
   </dependencies>
+  
 
   <build>
     <plugins>
