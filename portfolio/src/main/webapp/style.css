@@ -1,9 +1,213 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #F4F9F9;
 }
 
-#greeting-container {
+section, main {
+    margin: 4rem auto 0 auto;
+    width: 65%;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.site-btn {
+    border-radius: 12px;
+    border: 2px solid #dddddd;
+    font-size: 1rem;
+    padding: 10px 24px;
+}
+.site-btn:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+#translate-option {
+    display: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto 0 auto;
+    width: 65%;
+}
+.logo {
+    width: 7%;
+}
+.navbar ul {
+    display: inline;
+}
+.nav-link {
+    display: inline;
+    padding: 0 18px;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+.nav-link a {
+    text-decoration: none;
+    color: black;
+}
+.nav-link a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    width: 65%;
+    margin: 6rem auto 0 auto;
+}
+
+/* Projects */
+.project-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+}
+.proj-col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.row-reverse {
+    flex-direction: row-reverse;
+}
+.project-title a {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+.project-title a:hover {
+    text-decoration: underline;
+}
+.project-desc {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+.project-img {
+    width: 100%;
+}
+
+/* About Page */
+.about-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about-text-col {
+    display: flex;
+    flex-direction: column;
+    width: 55%;   
+}
+.about-text {
+    margin-top: 0;
+}
+.about-img-col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: right;
+}
+.personal-img {
+    width: 40%;
+    margin-left: auto;
+}
+
+#quote-container {
+  font-style: italic;
   margin-top: 20px;
+}
+
+/* Contact Page */
+.input-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form-input {
+    margin: 16px 0;
+    padding: 16px;
+    width: 40%;
+    border: 2px solid #ffffff;
+}
+
+/* footer  */
+footer {
+    margin-top: 6rem;
+    background-color: #ffffff;
+    padding: 5%;
+}
+.footer-content {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer-link {
+    display: inline;
+    margin-right: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Mobile Styling */
+/* Tablet */
+@media (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        font-size: 1rem;
+    }
+    .project-title a{
+        font-size: 1.2rem;
+    }
+    .form-input {
+        width: 100%;
+    }
+}
+
+/* Mobile Large */
+@media (max-width: 425px) {
+
+    /* Navbar Mobile */
+    .navbar ul {
+        display: inline-block;
+    }
+
+    /* Projects Mobile */
+    .project-row {
+        flex-direction: column;
+    }
+    .proj-col {
+        width: 100%;        
+    }
+    .project-img {
+        width: 80%;
+    }
+    .row-reverse {
+        flex-direction: row-reverse;
+    }
 }
