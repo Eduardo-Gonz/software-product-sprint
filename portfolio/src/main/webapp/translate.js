@@ -1,14 +1,16 @@
 async function translateText() {
   //Grab text and language code
-  let text = document.getElementbyId('motivation-container').value;
-  let languageCode = document.getElementbyId('language').value;
+  let text = document.getElementById('motivation-container').innerText;
+  console.log(text);
+  
+  let languageCode = document.getElementById('language').value;
 
   const translateParams = new URLSearchParams();
   translateParams.append('text', text);
   translateParams.append('languageCode', languageCode);
 
   const responseFromServer = await fetch('/translate', {
-      method: POST,
+      method: 'POST',
       body: translateParams
   });
 
