@@ -4,4 +4,8 @@ async function showMotivation() {
 
   const dateContainer = document.getElementById('motivation-container');
   dateContainer.innerText = textFromResponse;
+  
+
+  //Enable translation option
+  document.getElementById('translate-option').style.display = "block";
 }

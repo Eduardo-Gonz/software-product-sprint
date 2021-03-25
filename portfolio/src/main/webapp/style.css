@@ -35,6 +35,9 @@ p {
     cursor: pointer;
 }
 
+#translate-option {
+    display: none;
+}
 
 /* Navbar */
 .navbar {
